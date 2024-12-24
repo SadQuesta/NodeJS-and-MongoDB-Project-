@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MNU Designs Collective</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="icon" href="icons/icon2.ico" type="image/x-icon">
+    <title>MNU Designs Collective</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        form {
+            width: 300px;
+            background-color: #50dff981;
+            border: 1px solid #325a8f90;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        fieldset {
+            border: 1px solid #dba6f15d;
+            padding: 10px;
+            border-radius: 6px;
+            margin-bottom: 10px;
+        }
+
+        legend {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #040404;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+
+
+        input {
+            width: 100%;
+            padding: 4px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+
+        }
+
+
+
+        button {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        #clickable-paragraph {
+            cursor: pointer;
+            color: rgba(27, 27, 99, 0.998);
+            text-decoration: underline;
+            margin: 20px;
+        }
+
+        #login-form {
+            display: none;
+            position: absolute;
+            top: 1800px;
+            right: 200px;
+            border: 1px solid #ccc;
+            padding: 20px;
+            background-color: #f9f9f9;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        #form-legend {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+
+        #username-label,
+        #password-label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        #username,
+        #password {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+        }
+
+        #submit-button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        #submit-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="icon" href="icon/icon2.ico" type="image/x-icon">
+    <title>MNU Designs Collective</title>
+</head>
+
+<body>
+
+    <header>
+        <div id="logo-container">
+            <a href="index.html"><img src="images/_879bd5b7-c397-4281-ba9f-f186e793dd0c.jpg" alt="Mnu"></a>
+
+        </div>
+
+        <nav>
+            <ul>
+                <li class="dropdown">
+                    <a href="#home">Home</a>
+                    <div class="dropdown-content">
+                        <a href="#service1">Licanses</a>
+                        <a href="#service2">Social </a>
+                        <a href="#service3">History</a>
+                    </div>
+                </li>
+                <li><a href="#about">About Us</a></li>
+                <li class="dropdown">
+                    <a href="#services">Services</a>
+
+                    <div class="dropdown-content">
+                        <a href="#service4" class="protected-link">Bijouterie</a>
+                        <a href="#service5" class="protected-link">Sun Glasses</a>
+                        <a href="#service6" class="protected-link">Optical Glasses</a>
+                        <a href="#service7" class="protected-link">Kid Glasses</a>
+                        <a href="#service8" class="protected-link">Hair Clip</a>
+                        <script src="styles/appGuard.js"></script>
+                    </div>
+                </li>
+                <li><a href="contact.html">Contact</a></li>
+
+            </ul>
+            <p id="Guest">Visitor</p>
+            
+        </nav>
+
+
+    </header>
+
+
+    <section id="home">
+        <h2>Welcome to MNU </h2>
+
+        <div id="gallery">
+            <img src="images/sol.png" height="50" alt="Geri" onclick="changeImage(-1)">
+            <img src="images/pexels-kristina-paukshtite-1460838.jpg" alt="Resim 1" onclick="openImage(0)">
+            <img src="images/pexels-lumn-322207.jpg" alt="Resim 2" onclick="openImage(1)">
+            <img src="images/pexels-marta-branco-1453008.jpg" alt="Resim 3" onclick="openImage(2)">
+            <img src="images/sag.png" height="50" alt="İleri" onclick="changeImage(1)" style=>
+        </div>
+        <script src="styles/appSlayt.js"></script>
+        </div>
+
+
+
+
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+
+        <div id="metin">
+            <p>Welcome to MNU Designs Collective, where innovation meets sophistication, and accessories become
+                expressions of individuality. Established with a passion for enhancing personal flair and elevating
+                everyday experiences, we are your go-to destination for curated collections of high-quality accessories.
+            </p>
+            <br>
+            <p>At MNU Designs Collective, we believe that the right accessory has the power to transform an outfit,
+                uplift a mood, and make a lasting impression. Our commitment to craftsmanship and design excellence
+                ensures that each piece in our collection is a testament to timeless style and enduring quality.</p><br>
+            <p>Founded on the principles of innovation and a keen understanding of evolving fashion trends, MNU Designs
+                Collective strives to offer a diverse range of accessories that cater to a multitude of tastes and
+                preferences. Whether you're seeking the perfect statement piece for a special occasion or a subtle
+                accent to complement your daily ensemble, our carefully curated selection has something for everyone.
+            </p><br>
+            <p>Our team of dedicated designers and artisans at MNU Designs Collective works tirelessly to bring you
+                accessories that not only follow the latest trends but also transcend them, creating enduring pieces
+                that withstand the test of time. We take pride in sourcing the finest materials, employing meticulous
+                craftsmanship, and paying attention to the smallest details to ensure each accessory exudes
+                sophistication and stands as a symbol of your unique style.</p><br>
+            <p>Customer satisfaction is at the heart of our mission at MNU Designs Collective. We aim to provide a
+                seamless and enjoyable shopping experience, backed by exceptional customer service. Whether you shop
+                with us online or visit one of our physical stores, we want you to feel a sense of excitement and
+                satisfaction as you explore our carefully curated collections.</p>
+            <p>Thank you for choosing MNU Designs Collective as your trusted partner in accessorizing life's moments.
+                Join us on this journey of self-expression, and let our accessories be the finishing touch that
+                completes your distinctive style story.</p>
+        </div>
+        <p id="devamEtLink" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Continue...
+        </p>
+
+        <script>
+            var metinDiv = document.getElementById('metin');
+            var devamEtLink = document.getElementById('devamEtLink');
+            var maxMetinHeight = 1000; // Yeterince büyük bir değer
+
+            devamEtLink.addEventListener('click', function () {
+                if (metinDiv.style.maxHeight !== maxMetinHeight + 'px') {
+                    metinDiv.style.maxHeight = maxMetinHeight + 'px';
+
+                    devamEtLink.innerText = 'Lesser...';
+                } else {
+                    if (devamEtLink.innerText == 'Lesser...') {
+                        devamEtLink.innerText = 'Continue...';
+                        metinDiv.style.maxHeight = '100px'; // Başlangıç değeri
+                    }
+
+                }
+            });
+        </script>
+
+    </section>
+
+    <section id="services">
+        <h2 style="color: aquamarine;">Join Us</h2>
+        <p style="color: rgb(121, 30, 30);">Fill The Form Correctly</p>
+        <form id="user-form">
+            <fieldset id="signUp">
+                <legend id="signUp">User Information</legend>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+
+            </fieldset>
+            <p id="clickable-paragraph">Already have? Click to log in!</p>
+
+            <button type="submit" id="submit">Submit</button>
+            <div id="showValue"></div>
+            <script>
+
+                var paragraph = document.getElementById("Guest");
+                window.addEventListener('DOMContentLoaded', async function () {
+                    const response = await fetch('/users');
+                    const users = await response.json();
+
+                    const userList = document.getElementById('user-list');
+                    userList.innerHTML = '';
+
+                    users.forEach(user => {
+                        addUserToList(user);
+                    });
+                });
+
+                document.getElementById('user-form').addEventListener('submit', async function (event) {
+                    event.preventDefault();
+
+                    const name = document.getElementById('name').value;
+                    const email = document.getElementById('email').value;
+                    const password = document.getElementById('password').value;
+                    const phone = document.getElementById('phone').value;
+
+                    // Kullanıcı adının benzersiz olduğunu kontrol et
+                    const response = await fetch(`/users/check/${name}`);
+                    const result = await response.json();
+                    if (!result.available) {
+
+                        alert('Username already taken! Please choose a different username.');
+
+                        document.getElementById('name').value = '';
+                        return;
+                    }
+
+                    const saveResponse = await fetch('/users', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify({ name, email, password, phone })
+                    });
+
+                    const user = await saveResponse.json();
+                    alert("Hello " + name);
+
+                    document.getElementById('showValue').innerText = 'Hoş Geldiniz: ' + name + ' artik Ürünlere erişebilirsiniz';
+                    document.getElementById('Guest').value = name;
+                    paragraph.textContent = name;
+                    document.getElementById('user-form').reset();
+
+
+                });
+            </script>
+
+        </form>
+    </section>
+
+
+    <form id="login-form">
+        <fieldset>
+            <legend>Login</legend>
+            <label for="name">Name:</label>
+            <input type="text" id="log-name" name="name" required>
+            <label for="password">Password:</label>
+            <input type="password" id="log-password" name="password" required>
+            <button type="submit">Login</button>
+        </fieldset>
+    </form>
+    <script>
+        document.getElementById('clickable-paragraph').addEventListener('click', function () {
+            document.getElementById('login-form').style.display = 'block';
+        });
+        var paragraph = document.getElementById("Guest")
+        document.getElementById('login-form').addEventListener('submit', async function (event) {
+    event.preventDefault();
+
+    const name = document.getElementById('log-name').value;
+    const password = document.getElementById('log-password').value;
+    
+    const response = await fetch('/login', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ name, password })
+    });
+
+    const result = await response.json();
+
+            if (result.success) {
+                if (result.role === "admin") {
+                    alert('Admin Login successful!');
+                    window.location.href = '/admin.html'; // Admin paneline yönlendir
+                }
+                else {
+                    alert('Login successful! Welcome Back ' + name + ' now you can see products');
+                    // Giriş başarılıysa, sayfayı yenile veya başka bir işlem yapabilirsiniz
+
+                    document.getElementById('Guest').value = name;
+                    paragraph.textContent = name;
+                    document.getElementById('login-form').reset();
+                    document.getElementById('login-form').style.display = 'none';
+                   
+                }
+            } else {
+                alert('Invalid username or password!');
+                document.getElementById('login-form').reset();
+
+            }
+            
+        });
+    </script>
+
+    <footer>
+        <p>&copy; 2024 MNU Designs Collective. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
+</body>
+
+</html>

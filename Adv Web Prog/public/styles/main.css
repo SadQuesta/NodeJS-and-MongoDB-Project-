@@ -1,0 +1,211 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(https://th.bing.com/th/id/OIP.0tA-5zOAzQwlRFW3xDfhFAHaEI?rs=1&pid=ImgDetMain);
+
+}
+
+h1 a {
+    text-decoration: none;
+    color: aqua;
+    user-select: none;
+    pointer-events: none;
+    user-select: none;
+    pointer-events: none;
+    
+}
+
+#logo-container a img {
+    height: 160px;
+    width: 220px;
+    user-select: none;
+
+}
+
+#home {
+
+    h2 {
+        color: antiquewhite;
+        text-align: center;
+        user-select: none;
+        pointer-events: none;
+        font-family: 'Pacifico', cursive;
+            font-size: 3em;
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-20px);
+            }
+            60% {
+                transform: translateY(-10px);
+            }
+        }
+}
+
+header {
+    background-color: #00101a;
+    color: #fff;
+    padding: 1em 0;
+    
+}#logo-container{
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+
+}
+
+nav a {
+    text-decoration: none;
+    color: bisque;
+}nav p{
+    background-color: #3498db; /* Arka plan rengi */
+    color: #fff;              /* Yazı rengi */
+    padding: 10px;            /* Kutu iç kenar boşluğu */
+    border-radius: 5px;       /* Kenar yuvarlatma */
+    position: absolute;       /* Mutlak konumlandırma */
+    top: 15px;                /* Üstten 10 piksel mesafe */
+    right: 30px;  
+    
+}
+
+section {
+    padding: 50px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+}
+
+/* Dropdown içeriğini varsayılan olarak gizleme */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: aliceblue;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    top: 100%;
+    /* Altında çıkacak şekilde ayarlandı */
+    left: 0;
+    /* Alt menüyü parent'ın solundan başlatır */
+    width: 250%;
+    /* Genişlik 200% yapılarak parent'a tam uyumlu hale getirildi */
+}
+
+/* Dropdown linkleri için stil */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Üzerine gelindiğinde renk değiştirme */
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+/* Dropdown içeriğini, parent'ına göre konumlandırma */
+li.dropdown {
+    position: relative;
+    display: inline-block;
+    /* Ebeveynin içinde kalmasını sağlar */
+}
+
+/* Dropdown üzerine gelindiğinde içeriği gösterme */
+li.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+#gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#gallery img {
+    max-width: 100%;
+    max-height: 80vh;
+
+    margin: 0 10px;
+    order: 0;
+}
+
+#prevBtn,
+#nextBtn {
+    cursor: pointer;
+    width: 20px;
+    /* Ok tuşlarının genişliği */
+}
+
+#prevBtn {
+    order: -1;
+    /* Sol tarafta olmasını sağlar */
+
+}
+
+#prevBtn img {
+    transform: rotate(-90deg);
+}
+
+#nextBtn {
+    order: 1;
+    /* Sağ tarafta olmasını sağlar */
+
+ } #metin { 
+    overflow: hidden;
+    max-height: 100px;
+    transition: max-height 0.5s ease-out;
+    
+} #metin p {
+    font-family: 'Pacifico', cursive;
+
+}
+
+#devamEtLink {
+    cursor: pointer;
+    color: rgba(27, 51, 202, 0.897);
+}#about h2{
+    font-family: 'Pacifico', cursive;
+            font-size: 3em;
+            animation: bounce 2s infinite;
+            
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-20px);
+            }
+            60% {
+                transform: translateY(-10px);
+            }
+        }
+#metin p{
+    color: #f1f1f1;
+    
+}#about h2{
+    color: #bdb795;
+    
+}
+
